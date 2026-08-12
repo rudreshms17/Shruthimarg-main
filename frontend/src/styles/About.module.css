@@ -1,0 +1,86 @@
+.aboutContainer {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #1a1a1a;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+}
+
+.pageTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #ffeb3b;
+}
+
+.highlightPink {
+  color: #e91e63;
+}
+
+.aboutSection {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #2a2a2a;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.sectionHeading {
+  font-size: 2rem;
+  color: #e91e63;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #3e3e3e;
+  padding-bottom: 10px;
+}
+
+.aboutSection p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #b0b0b0;
+}
+
+.aboutSection ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.aboutSection li {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  background-color: #3e3e3e;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
+  padding-left: 40px; /* Space for custom bullet */
+}
+
+.aboutSection li strong {
+  color: #ffeb3b;
+}
+
+/* Custom bullet point */
+.aboutSection li::before {
+  content: '▶'; /* Unicode right-pointing triangle */
+  color: #9c27b0; /* Purple bullet */
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+}
+
+.contactLink {
+  color: #ffeb3b;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.contactLink:hover {
+  color: #9c27b0;
+}

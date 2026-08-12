@@ -1,0 +1,286 @@
+.solverContainer {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #1a1a1a;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+}
+
+.pageTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #e91e63;
+}
+
+.highlightYellow {
+  color: #ffeb3b;
+}
+
+.highlightPink {
+    color: #e91e63;
+}
+
+.controlsSection {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #333333;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.inputGroup label {
+  font-size: 1.1rem;
+  color: #cccccc;
+}
+
+.inputGroup select {
+  padding: 10px 15px;
+  border-radius: 8px;
+  background-color: #333333;
+  color: #ffffff;
+  border: 1px solid #555555;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 200px;
+}
+
+.inputGroup select:hover {
+  border-color: #ffeb3b;
+}
+
+.inputGroup select:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 235, 59, 0.3);
+}
+
+.inputSection {
+  margin-bottom: 50px;
+}
+
+.inputSection h2 {
+  font-size: 2.2rem;
+  color: #ffeb3b;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.addAddressForm {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+.addAddressForm input {
+  flex: 1;
+  max-width: 400px;
+  padding: 12px 18px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  background-color: #333333;
+  color: #ffffff;
+  border: 1px solid #555555;
+  transition: all 0.3s ease;
+}
+
+.addAddressForm input:focus {
+  border-color: #e91e63;
+  box-shadow: 0 0 0 3px rgba(233, 30, 99, 0.3);
+  outline: none;
+}
+
+.addAddressForm button {
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #e91e63, #9c27b0);
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.addAddressForm button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.addAddressForm button:disabled {
+    background: #555;
+    cursor: not-allowed;
+}
+
+.errorMessage {
+  color: #ffeb3b;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 1.1rem;
+}
+
+.pointsList {
+  background-color: #2a2a2a;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.pointsList h3 {
+  font-size: 1.8rem;
+  color: #ffeb3b;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.pointsList ul {
+  list-style: none;
+  padding: 0;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.pointsList li {
+  background-color: #3e3e3e;
+  padding: 12px 20px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.startPointSelection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 1px solid #333333;
+}
+
+.startPointSelection label {
+  font-size: 1.2rem;
+  color: #cccccc;
+  font-weight: 500;
+}
+
+.startPointSelection input {
+  padding: 12px 18px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  background-color: #333333;
+  color: #ffffff;
+  border: 1px solid #555555;
+  text-align: center;
+  max-width: 150px;
+  transition: all 0.3s ease;
+}
+
+.startPointSelection input:focus {
+  border-color: #e91e63;
+  box-shadow: 0 0 0 3px rgba(233, 30, 99, 0.3);
+  outline: none;
+}
+
+.startPointSelection button {
+  padding: 15px 35px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #e91e63, #9c27b0);
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.startPointSelection button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+.startPointSelection button:disabled {
+    background: #555;
+    cursor: not-allowed;
+}
+
+.resultsSection {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.resultsSection h2 {
+  font-size: 2.2rem;
+  color: #ffeb3b;
+  margin-bottom: 30px;
+}
+
+.summary {
+  background-color: #2a2a2a;
+  padding: 25px;
+  border-radius: 10px;
+  margin-top: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.summary h3 {
+  font-size: 1.6rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.distanceTableContainer {
+  margin-top: 40px;
+  background-color: #2a2a2a;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.distanceTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.distanceTable th, .distanceTable td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #3e3e3e;
+  text-align: left;
+  color: #e0e0e0;
+}
+
+.distanceTable th {
+  background-color: #333333;
+  color: #ffeb3b;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.distanceTable tr:last-child td {
+  border-bottom: none;
+}
+
+.distanceTable tbody tr:hover {
+  background-color: #3e3e3e;
+  transition: background-color 0.2s ease;
+}

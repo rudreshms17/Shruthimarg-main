@@ -1,0 +1,83 @@
+.guidelinesContainer {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #1a1a1a;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+}
+
+.pageTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #e91e63;
+}
+
+.highlightYellow {
+  color: #ffeb3b;
+}
+
+.guidelineSection {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #2a2a2a;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.sectionHeading {
+  font-size: 2rem;
+  color: #ffeb3b;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #3e3e3e;
+  padding-bottom: 10px;
+}
+
+.guidelineSection ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.guidelineSection li {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  background-color: #3e3e3e;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
+  padding-left: 40px;
+}
+
+.guidelineSection li strong {
+  color: #e91e63;
+}
+
+/* Nested lists */
+.guidelineSection ul ul {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.guidelineSection ul ul li {
+  background-color: #4a4a4a; /* Slightly different background for nested list items */
+  padding: 10px 15px;
+  font-size: 1rem;
+}
+
+/* Custom bullet point for main list items */
+.guidelineSection li::before {
+  content: '•';
+  color: #9c27b0;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  font-weight: bold;
+}

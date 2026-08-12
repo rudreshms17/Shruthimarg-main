@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #000000; /* Black background */
+  color: #ffffff; /* White text by default */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #e91e63; /* Pink for headings */
+}
+
+a {
+  color: #ffeb3b; /* Yellow for links */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #9c27b0; /* Purple on hover */
+  text-decoration: underline;
+}
+
+button {
+  background-color: #e91e63; /* Pink for buttons */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #9c27b0; /* Purple on hover */
+  transform: translateY(-2px);
+}
+
+input[type="text"], input[type="number"], select {
+  background-color: #333333; /* Dark grey for input fields */
+  color: #ffffff;
+  border: 1px solid #555555;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="number"]:focus, select:focus {
+  border-color: #ffeb3b; /* Yellow on focus */
+  outline: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
