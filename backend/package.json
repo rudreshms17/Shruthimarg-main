@@ -1,0 +1,20 @@
+{
+  "name": "tsp-backend",
+  "version": "1.0.0",
+  "description": "Backend for TSP Solver with Google Maps and Python integration",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "axios": "^1.x.x",
+    "cors": "^2.x.x",
+    "dotenv": "^16.x.x",
+    "express": "^4.x.x",
+    "@googlemaps/google-maps-services-js": "^8.x.x"
+  },
+  "devDependencies": {
+    "nodemon": "^3.x.x"
+  }
+}
